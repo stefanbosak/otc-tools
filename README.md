@@ -21,14 +21,14 @@
 | **Helm** | [`v4.2.3`](https://github.com/helm/helm/releases/tag/v4.2.3) |
 | **K9s** | [`v0.51.0`](https://github.com/derailed/k9s/releases/tag/v0.51.0) |
 | **Kops** | [`v1.36.0`](https://github.com/kubernetes/kops/releases/tag/v1.36.0) |
-| **Kubectl** | [`v1.37.0-beta.0`](https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0-beta.0) |
+| **Kubectl** | [`v1.36.3`](https://github.com/kubernetes/kubernetes/releases/tag/v1.36.3) |
 | **Kustomize** | [`5.8.1`](https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize/v5.8.1) |
 | **OTC CLI** | [`v0.0.7`](https://github.com/ysoftdevs/otc-cli/releases/tag/v0.0.7) |
 | **SwarmCLI** | [`v1.13.0-rc4`](https://github.com/Eldara-Tech/swarmcli/releases/tag/v1.13.0-rc4) |
 | **Terraform** | [`1.16.0-alpha20260715`](https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260715) |
 | **Terragrunt** | [`v1.1.1`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.1) |
 
-> 🔄 Last updated: 2026-07-22T03:02:15+02:00 · [Build #13](https://github.com/stefanbosak/otc-tools/actions/runs/29963151969)
+> 🔄 Last updated: 2026-07-23T00:34:33+02:00 · [Build #14](https://github.com/stefanbosak/otc-tools/actions/runs/29970314634)
 <!-- VERSION_INFO_END -->
 
 ---
