@@ -28,7 +28,7 @@
 | **Terraform** | [`1.16.0-beta1`](https://github.com/hashicorp/terraform/releases/tag/v1.16.0-beta1) |
 | **Terragrunt** | [`v1.1.1`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.1) |
 
-> 🔄 Last updated: 2026-07-23T18:44:45+02:00 · [Build #19](https://github.com/stefanbosak/otc-tools/actions/runs/30034532796)
+> 🔄 Last updated: 2026-07-23T20:41:35+02:00 · [Build #20](https://github.com/stefanbosak/otc-tools/actions/runs/30050105045)
 <!-- VERSION_INFO_END -->
 
 ---
