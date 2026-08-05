@@ -146,7 +146,11 @@ CCE resources are incrementally covered using kubectl and Helm charts.
 
 | Path | Description |
 |------|-------------|
-| [`scripts/kubernetes`](scripts/kubernetes) | <span style="color: #0969da;">Kubernetes manifest files</span> |
+| [`scripts/kubernetes/manifests/sample-workload`](scripts/kubernetes/manifests/sample-workload) | <span style="color: #0969da;">Plain kubectl manifests (namespace, deployment, service)</span> |
+| [`scripts/kubernetes/manifests/csi-storage`](scripts/kubernetes/manifests/csi-storage) | <span style="color: #0969da;">OTC CSI storage via the everest add-on: custom EVS `StorageClass` plus PVC examples for EVS (`csi-disk`), and OBS (`csi-obs`)</span> |
+| [`scripts/kubernetes/manifests/cni-networking`](scripts/kubernetes/manifests/cni-networking) | <span style="color: #0969da;">OTC CNI networking: CCE network model notes (Container Tunnel Network / VPC Network / Cloud Native Network 2.0) and `NetworkPolicy` examples</span> |
+| [`scripts/kubernetes/helm/cert-manager`](scripts/kubernetes/helm/cert-manager) | <span style="color: #0969da;">Helm chart values for the cert-manager operator</span> |
+| [`scripts/kubernetes/helm/cloudnative-pg`](scripts/kubernetes/helm/cloudnative-pg) | <span style="color: #0969da;">Helm chart values for the CloudNativePG operator</span> |
 
 ---
 
