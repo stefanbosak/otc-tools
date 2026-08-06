@@ -21,7 +21,7 @@
 | **Helm** | [`v4.2.3`](https://github.com/helm/helm/releases/tag/v4.2.3) |
 | **K9s** | [`v0.51.0`](https://github.com/derailed/k9s/releases/tag/v0.51.0) |
 | **Kops** | [`v1.36.1`](https://github.com/kubernetes/kops/releases/tag/v1.36.1) |
-| **Kubectl** | [`v1.36.3`](https://github.com/kubernetes/kubernetes/releases/tag/v1.36.3) |
+| **Kubectl** | [`v1.37.0-rc.0`](https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0-rc.0) |
 | **Kustomize** | [`5.8.1`](https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize/v5.8.1) |
 | **OpenTofu** | [`1.12.5`](https://github.com/opentofu/opentofu/releases/tag/v1.12.5) |
 | **OTC CLI** | [`v0.0.7`](https://github.com/ysoftdevs/otc-cli/releases/tag/v0.0.7) |
@@ -29,7 +29,7 @@
 | **Terraform** | [`1.16.0-beta2`](https://github.com/hashicorp/terraform/releases/tag/v1.16.0-beta2) |
 | **Terragrunt** | [`v1.1.2`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.2) |
 
-> 🔄 Last updated: 2026-08-04T15:14:22+02:00 · [Build #48](https://github.com/stefanbosak/otc-tools/actions/runs/31035966262)
+> 🔄 Last updated: 2026-08-06T00:15:38+02:00 · [Build #49](https://github.com/stefanbosak/otc-tools/actions/runs/31102907324)
 <!-- VERSION_INFO_END -->
 
 ---
