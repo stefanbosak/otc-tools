@@ -486,9 +486,7 @@ RUN if getent group "${CONTAINER_GROUP_ID}" > /dev/null; then \
     && chown -R "${CONTAINER_USER}:${CONTAINER_GROUP}" "${HOME_ROOT_DIR}" \
     && if getent group docker > /dev/null 2>&1; then \
          usermod -aG docker "${CONTAINER_USER}"; \
-       fi
-
-
+       fi && \
 # enable tools completions (required to run given tool to generate completion file content)
     ln -s /usr/local/bin/kubectl-cert_manager /usr/local/bin/cmctl && \
     cmctl completion bash > /usr/share/bash-completion/completions/cmctl && \
