@@ -25,11 +25,11 @@
 | **Kustomize** | [`5.8.1`](https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize/v5.8.1) |
 | **OpenTofu** | [`1.12.6`](https://github.com/opentofu/opentofu/releases/tag/v1.12.6) |
 | **OTC CLI** | [`v0.0.9`](https://github.com/ysoftdevs/otc-cli/releases/tag/v0.0.9) |
-| **SwarmCLI** | [`v1.14.0`](https://github.com/Eldara-Tech/swarmcli/releases/tag/v1.14.0) |
+| **SwarmCLI** | [`v2.0.0-rc1`](https://github.com/Eldara-Tech/swarmcli/releases/tag/v2.0.0-rc1) |
 | **Terraform** | [`1.15.9`](https://github.com/hashicorp/terraform/releases/tag/v1.15.9) |
 | **Terragrunt** | [`v1.1.3`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.3) |
 
-> 🔄 Last updated: 2026-08-21T00:18:30+02:00 · [Build #69](https://github.com/stefanbosak/otc-tools/actions/runs/32423781980)
+> 🔄 Last updated: 2026-08-21T00:24:14+02:00 · [Build #70](https://github.com/stefanbosak/otc-tools/actions/runs/32502157025)
 <!-- VERSION_INFO_END -->
 
 ---
