@@ -21,15 +21,15 @@
 | **Helm** | [`v4.2.4`](https://github.com/helm/helm/releases/tag/v4.2.4) |
 | **K9s** | [`v0.51.0`](https://github.com/derailed/k9s/releases/tag/v0.51.0) |
 | **Kops** | [`v1.36.2`](https://github.com/kubernetes/kops/releases/tag/v1.36.2) |
-| **Kubectl** | [`v1.36.4`](https://github.com/kubernetes/kubernetes/releases/tag/v1.36.4) |
+| **Kubectl** | [`v1.37.0`](https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0) |
 | **Kustomize** | [`5.8.1`](https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize/v5.8.1) |
 | **OpenTofu** | [`1.12.6`](https://github.com/opentofu/opentofu/releases/tag/v1.12.6) |
 | **OTC CLI** | [`v0.0.9`](https://github.com/ysoftdevs/otc-cli/releases/tag/v0.0.9) |
 | **SwarmCLI** | [`v2.0.0-rc2`](https://github.com/Eldara-Tech/swarmcli/releases/tag/v2.0.0-rc2) |
-| **Terraform** | [`1.15.9`](https://github.com/hashicorp/terraform/releases/tag/v1.15.9) |
+| **Terraform** | [`1.17.0-alpha20260827`](https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260827) |
 | **Terragrunt** | [`v1.1.3`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.3) |
 
-> 🔄 Last updated: 2026-08-21T18:20:36+02:00 · [Build #71](https://github.com/stefanbosak/otc-tools/actions/runs/32826270093)
+> 🔄 Last updated: 2026-08-25T10:26:53+02:00 · [Build #74](https://github.com/stefanbosak/otc-tools/actions/runs/33068005545)
 <!-- VERSION_INFO_END -->
 
 ---
