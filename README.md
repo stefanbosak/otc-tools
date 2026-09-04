@@ -23,13 +23,13 @@
 | **Kops** | [`v1.37.0-beta.1`](https://github.com/kubernetes/kops/releases/tag/v1.37.0-beta.1) |
 | **Kubectl** | [`v1.37.0`](https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0) |
 | **Kustomize** | [`5.8.1`](https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize/v5.8.1) |
-| **OpenTofu** | [`1.12.6`](https://github.com/opentofu/opentofu/releases/tag/v1.12.6) |
+| **OpenTofu** | [`1.13.0-beta1`](https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1) |
 | **OTC CLI** | [`v0.0.9`](https://github.com/ysoftdevs/otc-cli/releases/tag/v0.0.9) |
 | **SwarmCLI** | [`v2.0.0-rc4`](https://github.com/Eldara-Tech/swarmcli/releases/tag/v2.0.0-rc4) |
 | **Terraform** | [`1.16.1`](https://github.com/hashicorp/terraform/releases/tag/v1.16.1) |
 | **Terragrunt** | [`v1.1.4`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.4) |
 
-> 🔄 Last updated: 2026-09-04T00:24:38+02:00 · [Build #90](https://github.com/stefanbosak/otc-tools/actions/runs/33862962434)
+> 🔄 Last updated: 2026-09-04T12:28:23+02:00 · [Build #91](https://github.com/stefanbosak/otc-tools/actions/runs/33873330004)
 <!-- VERSION_INFO_END -->
 
 ---
