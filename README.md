@@ -27,9 +27,9 @@
 | **OTC CLI** | [`v0.0.9`](https://github.com/ysoftdevs/otc-cli/releases/tag/v0.0.9) |
 | **SwarmCLI** | [`v2.1.1`](https://github.com/Eldara-Tech/swarmcli/releases/tag/v2.1.1) |
 | **Terraform** | [`1.17.0-beta1`](https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta1) |
-| **Terragrunt** | [`v1.1.4`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.4) |
+| **Terragrunt** | [`v1.1.5`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.1.5) |
 
-> 🔄 Last updated: 2026-09-14T20:33:15+02:00 · [Build #115](https://github.com/stefanbosak/otc-tools/actions/runs/34892416103)
+> 🔄 Last updated: 2026-09-14T22:26:48+02:00 · [Build #116](https://github.com/stefanbosak/otc-tools/actions/runs/34903682527)
 <!-- VERSION_INFO_END -->
 
 ---
