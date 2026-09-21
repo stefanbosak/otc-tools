@@ -57,6 +57,11 @@ on:
         required: false
         type: string
         default: 'v0.0.9'
+      SOFKA_CLI_VERSION:
+        description: 'SOFKA_CLI_VERSION'
+        required: false
+        type: string
+        default: 'v0.28.3'
       SWARM_CLI_VERSION:
         description: 'SWARM_CLI_VERSION'
         required: false
@@ -105,6 +110,7 @@ jobs:
       KUSTOMIZE_CLI_RELEASE_VERSION: ${{ steps.params.outputs.KUSTOMIZE_CLI_RELEASE_VERSION }}
       OPENTOFU_CLI_RELEASE_VERSION: ${{ steps.params.outputs.OPENTOFU_CLI_RELEASE_VERSION }}
       OTC_CLI_RELEASE_VERSION: ${{ steps.params.outputs.OTC_CLI_RELEASE_VERSION }}
+      SOFKA_CLI_RELEASE_VERSION: ${{ steps.params.outputs.SOFKA_CLI_RELEASE_VERSION }}
       SWARM_CLI_RELEASE_VERSION: ${{ steps.params.outputs.SWARM_CLI_RELEASE_VERSION }}
       TERRAFORM_CLI_RELEASE_VERSION: ${{ steps.params.outputs.TERRAFORM_CLI_RELEASE_VERSION }}
       TERRAGRUNT_CLI_RELEASE_VERSION: ${{ steps.params.outputs.TERRAGRUNT_CLI_RELEASE_VERSION }}
@@ -134,6 +140,7 @@ jobs:
             KUBECTL_CLI_RELEASE_VERSION="${{ github.event.inputs.KUBECTL_CLI_VERSION }}"
             OPENTOFU_CLI_RELEASE_VERSION="${{ github.event.inputs.OPENTOFU_CLI_VERSION }}"
             OTC_CLI_RELEASE_VERSION="${{ github.event.inputs.OTC_CLI_VERSION }}"
+            SOFKA_CLI_RELEASE_VERSION="${{ github.event.inputs.SOFKA_CLI_VERSION }}"
             SWARM_CLI_RELEASE_VERSION="${{ github.event.inputs.SWARM_CLI_VERSION }}"
             TERRAFORM_CLI_RELEASE_VERSION="${{ github.event.inputs.TERRAFORM_CLI_VERSION }}"
             TERRAGRUNT_CLI_RELEASE_VERSION="${{ github.event.inputs.TERRAGRUNT_CLI_VERSION }}"
@@ -156,6 +163,7 @@ jobs:
             KUSTOMIZE_CLI_RELEASE_VERSION=$(echo "${CHANGES_JSON}" | jq -r '.[] | select(.repo == "kustomize") | .tag')
             OPENTOFU_CLI_RELEASE_VERSION=$(echo "${CHANGES_JSON}" | jq -r '.[] | select(.repo == "opentofu") | .tag')
             OTC_CLI_RELEASE_VERSION=$(echo "${CHANGES_JSON}" | jq -r '.[] | select(.repo == "otc-cli") | .tag')
+            SOFKA_CLI_RELEASE_VERSION=$(echo "${CHANGES_JSON}" | jq -r '.[] | select(.repo == "sofka") | .tag')
             SWARM_CLI_RELEASE_VERSION=$(echo "${CHANGES_JSON}" | jq -r '.[] | select(.repo == "swarmcli") | .tag')
             TERRAFORM_CLI_RELEASE_VERSION=$(echo "${CHANGES_JSON}" | jq -r '.[] | select(.repo == "terraform") | .tag')
             TERRAGRUNT_CLI_RELEASE_VERSION=$(echo "${CHANGES_JSON}" | jq -r '.[] | select(.repo == "terragrunt") | .tag')
@@ -175,6 +183,7 @@ jobs:
           echo "KUBECTL_CLI_RELEASE_VERSION=${KUBECTL_CLI_RELEASE_VERSION}" >> ${GITHUB_OUTPUT}
           echo "OPENTOFU_CLI_RELEASE_VERSION=${OPENTOFU_CLI_RELEASE_VERSION#v}" >> ${GITHUB_OUTPUT}
           echo "OTC_CLI_RELEASE_VERSION=${OTC_CLI_RELEASE_VERSION}" >> ${GITHUB_OUTPUT}
+          echo "SOFKA_CLI_RELEASE_VERSION=${SOFKA_CLI_RELEASE_VERSION}" >> ${GITHUB_OUTPUT}
           echo "SWARM_CLI_RELEASE_VERSION=${SWARM_CLI_RELEASE_VERSION}" >> ${GITHUB_OUTPUT}
           echo "TERRAFORM_CLI_RELEASE_VERSION=${TERRAFORM_CLI_RELEASE_VERSION#v}" >> ${GITHUB_OUTPUT}
           echo "TERRAGRUNT_CLI_RELEASE_VERSION=${TERRAGRUNT_CLI_RELEASE_VERSION}" >> ${GITHUB_OUTPUT}
@@ -312,6 +321,7 @@ jobs:
             TERRAGRUNT_CLI_VERSION=${{ needs.prepare.outputs.TERRAGRUNT_CLI_RELEASE_VERSION }}
             OPENTOFU_CLI_VERSION=${{ needs.prepare.outputs.OPENTOFU_CLI_RELEASE_VERSION }}
             OTC_CLI_VERSION=${{ needs.prepare.outputs.OTC_CLI_RELEASE_VERSION }}
+            SOFKA_CLI_VERSION=${{ needs.prepare.outputs.SOFKA_CLI_RELEASE_VERSION }}
             CM_CTL_CLI_VERSION=${{ needs.prepare.outputs.CM_CTL_CLI_RELEASE_VERSION }}
             WORKSPACE_ROOT_DIR=${{ needs.prepare.outputs.WORKSPACE_ROOT_DIR }}
           push: true
@@ -387,6 +397,7 @@ jobs:
           KUSTOMIZE_CLI_RELEASE_VERSION: ${{ needs.prepare.outputs.KUSTOMIZE_CLI_RELEASE_VERSION }}
           OPENTOFU_CLI_RELEASE_VERSION: ${{ needs.prepare.outputs.OPENTOFU_CLI_RELEASE_VERSION }}
           OTC_CLI_RELEASE_VERSION: ${{ needs.prepare.outputs.OTC_CLI_RELEASE_VERSION }}
+          SOFKA_CLI_RELEASE_VERSION: ${{ needs.prepare.outputs.SOFKA_CLI_RELEASE_VERSION }}
           SWARM_CLI_RELEASE_VERSION: ${{ needs.prepare.outputs.SWARM_CLI_RELEASE_VERSION }}
           TERRAFORM_CLI_RELEASE_VERSION: ${{ needs.prepare.outputs.TERRAFORM_CLI_RELEASE_VERSION }}
           TERRAGRUNT_CLI_RELEASE_VERSION: ${{ needs.prepare.outputs.TERRAGRUNT_CLI_RELEASE_VERSION }}
@@ -471,6 +482,13 @@ jobs:
             sh -c "otc --version | grep -oP '\d+\.\d+\.\d+'")
           echo "OTC_CLI_VERSION=${OTC_CLI_VERSION#v}"
 
+          SOFKA_CLI_VERSION=$(docker run --rm \
+            -v /dev:/dev \
+            -u root \
+            "${IMAGE}" \
+            sh -c "sofka --version | awk '{print \$NF}'")
+          echo "SOFKA_CLI_VERSION=${SOFKA_CLI_VERSION#v}"
+
           SWARM_CLI_VERSION=$(docker run --rm \
             -v /dev:/dev \
             -u root \
@@ -502,6 +520,7 @@ jobs:
           compare "KUSTOMIZE_CLI_VERSION"  "${KUSTOMIZE_CLI_VERSION}"  "${KUSTOMIZE_CLI_RELEASE_VERSION}"
           compare "OPENTOFU_CLI_VERSION"   "${OPENTOFU_CLI_VERSION}"   "${OPENTOFU_CLI_RELEASE_VERSION}"
           compare "OTC_CLI_VERSION"        "${OTC_CLI_VERSION}"        "${OTC_CLI_RELEASE_VERSION}"
+          compare "SOFKA_CLI_VERSION"      "${SOFKA_CLI_VERSION}"      "${SOFKA_CLI_RELEASE_VERSION}"
           compare "SWARM_CLI_VERSION"      "${SWARM_CLI_VERSION}"      "${SWARM_CLI_RELEASE_VERSION}"
           compare "TERRAFORM_CLI_VERSION"  "${TERRAFORM_CLI_VERSION}"  "${TERRAFORM_CLI_RELEASE_VERSION}"
           compare "TERRAGRUNT_CLI_VERSION" "${TERRAGRUNT_CLI_VERSION}" "${TERRAGRUNT_CLI_RELEASE_VERSION}"
@@ -645,6 +664,7 @@ jobs:
           KUSTOMIZE_CLI_RELEASE_VERSION: ${{ needs.prepare.outputs.KUSTOMIZE_CLI_RELEASE_VERSION }}
           OPENTOFU_CLI_RELEASE_VERSION: ${{ needs.prepare.outputs.OPENTOFU_CLI_RELEASE_VERSION }}
           OTC_CLI_RELEASE_VERSION: ${{ needs.prepare.outputs.OTC_CLI_RELEASE_VERSION }}
+          SOFKA_CLI_RELEASE_VERSION: ${{ needs.prepare.outputs.SOFKA_CLI_RELEASE_VERSION }}
           SWARM_CLI_RELEASE_VERSION: ${{ needs.prepare.outputs.SWARM_CLI_RELEASE_VERSION }}
           TERRAFORM_CLI_RELEASE_VERSION: ${{ needs.prepare.outputs.TERRAFORM_CLI_RELEASE_VERSION }}
           TERRAGRUNT_CLI_RELEASE_VERSION: ${{ needs.prepare.outputs.TERRAGRUNT_CLI_RELEASE_VERSION }}
@@ -666,6 +686,7 @@ jobs:
               ('Kustomize',        os.environ['KUSTOMIZE_CLI_RELEASE_VERSION'],  'https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize/v'  + os.environ['KUSTOMIZE_CLI_RELEASE_VERSION']),
               ('OpenTofu',         os.environ['OPENTOFU_CLI_RELEASE_VERSION'],   'https://github.com/opentofu/opentofu/releases/tag/v'                    + os.environ['OPENTOFU_CLI_RELEASE_VERSION']),
               ('OTC CLI',          os.environ['OTC_CLI_RELEASE_VERSION'],        'https://github.com/ysoftdevs/otc-cli/releases/tag/'                     + os.environ['OTC_CLI_RELEASE_VERSION']),
+              ('Sofka',            os.environ['SOFKA_CLI_RELEASE_VERSION'],      'https://github.com/nklmilojevic/sofka/releases/tag/'                    + os.environ['SOFKA_CLI_RELEASE_VERSION']),
               ('SwarmCLI',         os.environ['SWARM_CLI_RELEASE_VERSION'],      'https://github.com/Eldara-Tech/swarmcli/releases/tag/'                  + os.environ['SWARM_CLI_RELEASE_VERSION']),
               ('Terraform',        os.environ['TERRAFORM_CLI_RELEASE_VERSION'],  'https://github.com/hashicorp/terraform/releases/tag/v'                  + os.environ['TERRAFORM_CLI_RELEASE_VERSION']),
               ('Terragrunt',       os.environ['TERRAGRUNT_CLI_RELEASE_VERSION'], 'https://github.com/gruntwork-io/terragrunt/releases/tag/'               + os.environ['TERRAGRUNT_CLI_RELEASE_VERSION'])
@@ -697,6 +718,7 @@ jobs:
               'KUSTOMIZE_CLI_VERSION':  os.environ['KUSTOMIZE_CLI_RELEASE_VERSION'],
               'OPENTOFU_CLI_VERSION':   os.environ['OPENTOFU_CLI_RELEASE_VERSION'],
               'OTC_CLI_VERSION':        os.environ['OTC_CLI_RELEASE_VERSION'],
+              'SOFKA_CLI_VERSION':      os.environ['SOFKA_CLI_RELEASE_VERSION'],
               'SWARM_CLI_VERSION':      os.environ['SWARM_CLI_RELEASE_VERSION'],
               'TERRAFORM_CLI_VERSION':  os.environ['TERRAFORM_CLI_RELEASE_VERSION'],
               'TERRAGRUNT_CLI_VERSION': os.environ['TERRAGRUNT_CLI_RELEASE_VERSION']

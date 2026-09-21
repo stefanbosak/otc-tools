@@ -28,6 +28,7 @@ jobs:
               {"owner":"kubernetes-sigs","repo":"kustomize","tagprefix":"kustomize/"},
               {"owner":"opentofu","repo":"opentofu"},
               {"owner":"ysoftdevs","repo":"otc-cli"},
+              {"owner":"nklmilojevic","repo":"sofka"},
               {"owner":"Eldara-Tech","repo":"swarmcli"},
               {"owner":"hashicorp","repo":"terraform"},
               {"owner":"gruntwork-io","repo":"terragrunt"}
