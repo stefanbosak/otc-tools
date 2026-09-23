@@ -21,6 +21,7 @@
 | **Helm** | [`v4.3.0`](https://github.com/helm/helm/releases/tag/v4.3.0) |
 | **K9s** | [`v0.51.0`](https://github.com/derailed/k9s/releases/tag/v0.51.0) |
 | **Kops** | [`v1.37.0-beta.1`](https://github.com/kubernetes/kops/releases/tag/v1.37.0-beta.1) |
+| **Kpt** | [`v1.0.0`](https://github.com/kptdev/kpt/releases/tag/v1.0.0) |
 | **Kubectl** | [`v1.37.0`](https://github.com/kubernetes/kubernetes/releases/tag/v1.37.0) |
 | **Kustomize** | [`5.8.1`](https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize/v5.8.1) |
 | **OpenTofu** | [`1.13.0-rc1`](https://github.com/opentofu/opentofu/releases/tag/v1.13.0-rc1) |
@@ -50,6 +51,7 @@ This repository provides a fully automated preparation of <span style="color: #0
 | [Docker CLI](https://docker.com) | <span style="color: #d73a49;">Container management CLI</span> |
 | [HELM CLI](https://helm.sh/docs/helm/) | <span style="color: #0969da;">Kubernetes package manager</span> |
 | [kops CLI](https://kops.sigs.k8s.io/) | <span style="color: #0969da;">Kubernetes cluster management</span> |
+| [kpt CLI](https://kpt.dev/) | <span style="color: #0969da;">Package-centric toolchain for Kubernetes configuration</span> |
 | [kubectl CLI](https://kubernetes.io/docs/reference/kubectl/) | <span style="color: #0969da;">Kubernetes command-line tool</span> |
 | [k9s CLI](https://k9scli.io/) | <span style="color: #0969da;">Terminal UI for Kubernetes</span> |
 | [OpenTofu CLI](https://opentofu.org/) | <span style="color: #1a7f37;">Open-source Infrastructure as Code tool (Terraform fork)</span> |
