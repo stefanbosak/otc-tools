@@ -16,7 +16,7 @@
 <!-- VERSION_INFO_START -->
 | Component | Version |
 |-----------|---------|
-| **Ansible** | [`v2.22.0b1`](https://github.com/ansible/ansible/releases/tag/v2.22.0b1) |
+| **Ansible** | [`v2.22.0b2`](https://github.com/ansible/ansible/releases/tag/v2.22.0b2) |
 | **cert-manager CLI** | [`v2.6.1`](https://github.com/cert-manager/cmctl/releases/tag/v2.6.1) |
 | **Helm** | [`v4.3.0`](https://github.com/helm/helm/releases/tag/v4.3.0) |
 | **K9s** | [`v0.51.0`](https://github.com/derailed/k9s/releases/tag/v0.51.0) |
@@ -26,12 +26,12 @@
 | **Kustomize** | [`5.8.1`](https://github.com/kubernetes-sigs/kustomize/releases/tag/kustomize/v5.8.1) |
 | **OpenTofu** | [`1.13.0-rc1`](https://github.com/opentofu/opentofu/releases/tag/v1.13.0-rc1) |
 | **OTC CLI** | [`v0.0.9`](https://github.com/ysoftdevs/otc-cli/releases/tag/v0.0.9) |
-| **Sofka** | [`v0.29.4`](https://github.com/nklmilojevic/sofka/releases/tag/v0.29.4) |
+| **Sofka** | [`v0.29.5`](https://github.com/nklmilojevic/sofka/releases/tag/v0.29.5) |
 | **SwarmCLI** | [`v2.1.1`](https://github.com/Eldara-Tech/swarmcli/releases/tag/v2.1.1) |
 | **Terraform** | [`1.17.0-beta2`](https://github.com/hashicorp/terraform/releases/tag/v1.17.0-beta2) |
 | **Terragrunt** | [`v1.2.0-rc1`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.2.0-rc1) |
 
-> 🔄 Last updated: 2026-09-29T00:25:54+02:00 · [Build #152](https://github.com/stefanbosak/otc-tools/actions/runs/36555522218)
+> 🔄 Last updated: 2026-09-29T12:29:30+02:00 · [Build #153](https://github.com/stefanbosak/otc-tools/actions/runs/36597920973)
 <!-- VERSION_INFO_END -->
 
 ---
