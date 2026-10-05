@@ -16,7 +16,7 @@
 <!-- VERSION_INFO_START -->
 | Component | Version |
 |-----------|---------|
-| **Ansible** | [`v2.22.0b2`](https://github.com/ansible/ansible/releases/tag/v2.22.0b2) |
+| **Ansible** | [`v2.21.5`](https://github.com/ansible/ansible/releases/tag/v2.21.5) |
 | **cert-manager CLI** | [`v2.6.1`](https://github.com/cert-manager/cmctl/releases/tag/v2.6.1) |
 | **Helm** | [`v4.3.0`](https://github.com/helm/helm/releases/tag/v4.3.0) |
 | **K9s** | [`v0.51.0`](https://github.com/derailed/k9s/releases/tag/v0.51.0) |
@@ -31,7 +31,7 @@
 | **Terraform** | [`1.16.5`](https://github.com/hashicorp/terraform/releases/tag/v1.16.5) |
 | **Terragrunt** | [`v1.2.0-rc1`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.2.0-rc1) |
 
-> 🔄 Last updated: 2026-10-03T19:33:49+02:00 · [Build #163](https://github.com/stefanbosak/otc-tools/actions/runs/37207990042)
+> 🔄 Last updated: 2026-10-04T16:09:03+02:00 · [Build #164](https://github.com/stefanbosak/otc-tools/actions/runs/37341015442)
 <!-- VERSION_INFO_END -->
 
 ---
