@@ -28,10 +28,10 @@
 | **OTC CLI** | [`v0.0.9`](https://github.com/ysoftdevs/otc-cli/releases/tag/v0.0.9) |
 | **Sofka** | [`v0.32.0`](https://github.com/nklmilojevic/sofka/releases/tag/v0.32.0) |
 | **SwarmCLI** | [`v2.2.0`](https://github.com/Eldara-Tech/swarmcli/releases/tag/v2.2.0) |
-| **Terraform** | [`1.17.0`](https://github.com/hashicorp/terraform/releases/tag/v1.17.0) |
+| **Terraform** | [`1.17.1`](https://github.com/hashicorp/terraform/releases/tag/v1.17.1) |
 | **Terragrunt** | [`v1.2.1`](https://github.com/gruntwork-io/terragrunt/releases/tag/v1.2.1) |
 
-> 🔄 Last updated: 2026-10-28T06:21:03+01:00 · [Build #202](https://github.com/stefanbosak/otc-tools/actions/runs/40663333439)
+> 🔄 Last updated: 2026-10-28T10:23:00+01:00 · [Build #203](https://github.com/stefanbosak/otc-tools/actions/runs/40752653961)
 <!-- VERSION_INFO_END -->
 
 ---
